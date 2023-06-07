@@ -85,7 +85,7 @@ function shopee(URL) {
         }
         msg +="*"+data.percent+"*\n";
         msg +="Nama : "+data.name+"\n";
-        msg +="Harga: ~"+data.realprice+"~ data.price\n";
+        msg +="Harga: ~"+data.realprice+"~ "+data.price+"\n";
         msg +=data.href+"\n\n";
     });
     browser.close();
