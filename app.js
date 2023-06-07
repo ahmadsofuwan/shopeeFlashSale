@@ -120,4 +120,7 @@ async function autoScroll(page){
       });
   });
 }
-shopee("https://shopee.co.id/flash_sale")
+app.get('/', (req, res) => {
+    shopee("https://shopee.co.id/flash_sale");
+    res.send("done to blash");
+  });
