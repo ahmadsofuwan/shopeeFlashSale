@@ -61,7 +61,7 @@ function shopee(URL) {
             var price = tempPrice.split("Rp")[2].replace(/\D/g, '');
             percent = percent.replace(/\D/g, '');
             
-            if(percent >= minDic){
+            if( parseInt(percent) >= parseInt(minDic)){
                 result.push({
                     'name':tempName,
                     'price':"Rp."+new Intl.NumberFormat('id-ID', { maximumSignificantDigits: 3 }).format(price),
