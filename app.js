@@ -119,6 +119,7 @@ async function autoScroll(page){
           }, 100);
       });
   });
+  console.log("done scrolling");
 }
 app.get('/', (req, res) => {
     shopee("https://shopee.co.id/flash_sale");
