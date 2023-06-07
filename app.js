@@ -40,7 +40,7 @@ function shopee(URL) {
         script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
         document.head.appendChild(script);
       });
-    //   await page.waitForTimeout(2000);
+      await page.waitForTimeout(2000);
       await autoScroll(page)
     
       var produck = await page.evaluate((minDic) => {
