@@ -81,7 +81,7 @@ function shopee(URL) {
     var msg = "";
     await produck.forEach(data => {
         if(msg == ""){
-            msg = "*DISKON FLAHSALE SHOPEE >90%*\nBy_OnemonBot\n\n"
+            msg = "*DISKON FLAHSALE SHOPEE >"+minDic+"%*\nBy_OnemonBot\n\n"
         }
         msg +="*"+data.percent+"*\n";
         msg +="Nama : "+data.name+"\n";
