@@ -43,6 +43,8 @@ function shopee(URL, scroll) {
     await page.waitForTimeout(2000);
     if (scroll) {
       await autoScroll(page)
+    } else {
+      await page.waitForNavigation();
     }
 
     var produck = await page.evaluate((minDic) => {
